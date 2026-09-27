@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   keywords: ["Loki", "VCS", "Version Control", "Development", "Open Source"],
   authors: [{ name: "Loki Team" }],
   icons: {
-    icon: "/Vector.svg",
+    icon: "/favicon.png",
   },
   openGraph: {
     title: "Loki - Modern Version Control",
