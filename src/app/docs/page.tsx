@@ -92,6 +92,25 @@ export default function DocumentationPage() {
 			<Header />
 
 			<main className="mx-auto w-full max-w-6xl flex-1 px-6 py-12 lg:px-8">
+				<section className="mb-8 rounded-2xl border border-border bg-card/60 p-6 shadow-lg shadow-primary/5">
+					<div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+						<div>
+							<p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary/90">Overview</p>
+							<h2 className="mt-2 text-2xl font-bold">Download the Loki presentation</h2>
+							<p className="mt-2 text-muted-foreground">
+								Open the overview deck for a quick introduction to Loki and its CLI features.
+							</p>
+						</div>
+						<a
+							href="/overview.pptx"
+							download
+							className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+						>
+							Download PPTX
+						</a>
+					</div>
+				</section>
+
 				<section className="mb-12 rounded-2xl border border-border bg-card/60 p-8 shadow-lg shadow-primary/5">
 					<div className="flex flex-col gap-6 lg:flex-row lg:items-end lg:justify-between">
 						<div className="max-w-3xl">
