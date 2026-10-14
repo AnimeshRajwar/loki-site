@@ -93,21 +93,38 @@ export default function DocumentationPage() {
 
 			<main className="mx-auto w-full max-w-6xl flex-1 px-6 py-12 lg:px-8">
 				<section className="mb-8 rounded-2xl border border-border bg-card/60 p-6 shadow-lg shadow-primary/5">
-					<div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+					<div className="grid gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] lg:items-start">
 						<div>
 							<p className="text-sm font-semibold uppercase tracking-[0.2em] text-primary/90">Overview</p>
-							<h2 className="mt-2 text-2xl font-bold">Download the Loki presentation</h2>
+							<h2 className="mt-2 text-2xl font-bold">Show the Loki presentation</h2>
 							<p className="mt-2 text-muted-foreground">
-								Open the overview deck for a quick introduction to Loki and its CLI features.
+								Preview the deck right on the page, or download the original PPTX if you want to open it locally.
 							</p>
+							<div className="mt-5 flex flex-wrap gap-3">
+								<a
+									href="/overview.pptx"
+									download
+									className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+								>
+									Download PPTX
+								</a>
+								<a
+									href="/overview.pdf"
+									target="_blank"
+									rel="noreferrer"
+									className="inline-flex items-center justify-center rounded-md border border-border bg-background px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-accent"
+								>
+									Open PDF
+								</a>
+							</div>
 						</div>
-						<a
-							href="/overview.pptx"
-							download
-							className="inline-flex items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
-						>
-							Download PPTX
-						</a>
+						<div className="overflow-hidden rounded-xl border border-border bg-background">
+							<iframe
+								src="/overview.pdf#view=FitH"
+								title="Loki presentation preview"
+								className="h-[70vh] min-h-112 w-full"
+							/>
+						</div>
 					</div>
 				</section>
 
